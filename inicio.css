@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.logo{
+  font-size: 2em;
+  color: white;
+  user-select: none;
+  margin: 0;
+}
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: white;
+   text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+.navigation a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #ffffff;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
+.navigation a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.navigation .bntLogin-popup {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #ffffff;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: .5s;
+}
+header {
+  background-color: #ff0000a0;
+  padding: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  background: rgba(255, 0, 0, 0.848);
+} 
+.h1, h2 {
+    color: #000000;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+.inform {
+  background-color: white;/*fondo de foto*/
+  padding: 60px;
+  border: 2px solid #918585a7;
+}
+.inform img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.inform h2 {
+  text-align: center;
+  color: #000000;
+}
+.inform p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.presentacion {
+  background-color: #9f9f9f9b;
+  padding: 50px;
+}
+.presentacion h2 {
+  color: black;
+  margin-bottom: 10px;
+}
+.presentacion a {
+  background-color: #ff0000a0;
+  color: white;
+  border-radius: 6px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.habitaciones {
+  padding: 70px 30px;
+  margin-top: 40px;
+}
+.habitaciones ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.habitaciones h2 h3 {
+  color: black;
+}
+.habitaciones span {
+  display: block;
+  margin-bottom: 10px;
+}
+.img {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.img img {
+  width: 200px;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: 10px;
+} 
+.contactos {
+  background-color: #e5e5e5ac;
+  padding: 20px;
+  border: 2px solid #918585;
+}
+.contactos h3 {
+  color: #333;
+}
+.contactos p {
+  margin-bottom: 10px;
+}
+footer {
+  background-color: #4f4c4c;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}

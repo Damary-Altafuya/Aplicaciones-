@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reservación de Habitaciones</title>
+  <link rel="stylesheet" href="reserva.css">
+</head>
+<body>
+  <h1>Información del Estudiante</h1>
+  
+  <form action="procesar_reserva.php" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" required><br><br>
+
+    <label for="teléfono">Teléfono:</label>
+    <input type="text" id="teléfono" name="teléfono" required><br><br>
+    
+    <label for="email">Correo:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="habitacion">Tipo de Habitación:</label>
+    <select id="habitacion" name="habitacion">
+      <option value="individual">Individual</option>
+      <option value="doble">Doble</option>
+      <option value="compartida">Compartida</option>
+    </select><br><br>
+    
+    <label for="fecha_inicio">Fecha de inicio:</label>
+    <input type="date" id="fecha_inicio" name="fecha_inicio" required><br><br>
+    
+    <label for="fecha_fin">Fecha de fin:</label>
+    <input type="date" id="fecha_fin" name="fecha_fin" required><br><br>
+    
+    <input type="submit" value="Reservar">
+  </form>
+</main>
+  
+<footer>
+  <p>Derechos de autor &copy; 2023 Residencia Universitaria Uleam</p>
+</footer>
+</body>
+</html>
